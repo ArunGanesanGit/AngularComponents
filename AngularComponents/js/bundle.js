@@ -11,7 +11,7 @@ var angularRoute = require('angular-route');
 angular
 	.module('myApp', [angularRoute])	
 	.component('testTemplate', {
-		templateUrl: '../view/testtemplate.html',
+		templateUrl: '../AngularComponents/view/testtemplate.html',
 		bindings: { name: '@' },
 		controller: function() {
         	this.myName = 'Alain';
@@ -75,11 +75,11 @@ angular
 		$routeProvider
 			.when('/main', {
 				controller: 'MyController as myCtrl',
-				templateUrl: '../view/myview.html'
+				templateUrl: '../AngularComponents/view/myview.html'
 			})
 			.when('/test', {
 				controller: 'TestController as testCtrl',
-				templateUrl: '../view/testview.html'	
+				templateUrl: '../AngularComponents/view/testview.html'	
 			})
 			.otherwise({
 		      redirectTo:'/main'
